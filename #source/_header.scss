@@ -1,0 +1,33 @@
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 124px;
+
+  &__navigation {
+    max-width: 520px;
+    width: 100%;
+  }
+
+  &__navigationList {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__navigationLink {
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+    color: #001A34;
+  }
+
+  &__tagline {
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.6px;
+  }
+}
