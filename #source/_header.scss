@@ -1,3 +1,5 @@
+@import "variables";
+
 .header {
   grid-area: header;
   display: flex;
@@ -18,10 +20,34 @@
   }
 
   &__navigationLink {
+    position: relative;
+    padding: 10px 0;
     line-height: 20px;
     letter-spacing: 0.6px;
     text-decoration: none;
-    color: #001A34;
+    color: $dark-space;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '.';
+      color: transparent;
+      background: $dark-space;
+      height: 1px;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    &::after,
+    &::before {
+      transition: all .4s;
+    }
   }
 
   &__tagline {

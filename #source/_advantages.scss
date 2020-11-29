@@ -1,0 +1,53 @@
+.advantages {
+  margin: 80px 0;
+
+  &__box {
+    margin-top: 64px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 240px);
+    justify-content: center;
+    gap: 24px;
+
+    &-itemBg {
+      height: 56px;
+      @include bgImage;
+      background-size: auto;
+
+      &-leader {
+        background-image: url(/assets/img/advantages-leader.svg);
+      }
+
+      &-expert {
+        background-image: url(/assets/img/advantages-expert.svg);
+      }
+
+      &-relevance {
+        background-image: url(/assets/img/advantages-relevance.svg);
+      }
+
+      &-curator {
+        background-image: url(/assets/img/advantages-leader.svg);
+      }
+    }
+
+    &-itemInfo {
+      margin-top: 34px;
+      text-align: center;
+    }
+
+    &-itemTitle {
+      margin-bottom: 16px;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.6px;
+    }
+
+    &-itemText {
+      color: $dark-space80;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 0;
+    }
+  }
+}
