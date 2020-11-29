@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'OpenSans-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src:
+      local('OpenSans-Regular'),
+      url(/assets/fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  font-style: normal;
+  font-weight: bold;
+  src:
+      local('OpenSans-Bold'),
+      url(/assets/fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  font-style: normal;
+  font-weight: normal;
+  src:
+      local('OpenSans-Light'),
+      url(/assets/fonts/OpenSans-Light.ttf);
+}
