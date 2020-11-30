@@ -209,7 +209,7 @@ template {
 	left: 0;
 	right: 0;
 	margin: auto;
-	width: 0%;
+	width: 0;
 	content: ".";
 	color: transparent;
 	background: #001A34;
@@ -233,8 +233,8 @@ template {
 	align-items: center;
 	height: 708px;
 	background-repeat: no-repeat;
-	background-position: center;
 	background-size: cover;
+	background-position: center;
 }
 .hero__content {
 	display: flex;
@@ -260,12 +260,12 @@ template {
 .hero--main {
 	justify-content: flex-start;
 	padding-left: 150px;
-	background-image: url(/assets/img/hero-main.jpg);
+	background-image: url(../img/hero-main.jpg);
 }
 .hero--second {
 	justify-content: flex-end;
 	padding-right: 206px;
-	background-image: url(/assets/img/hero-second.jpg);
+	background-image: url(../img/hero-second.jpg);
 }
 
 .courses {
@@ -293,13 +293,13 @@ template {
 	background-position: center;
 }
 .courses__box-itemBg-business {
-	background-image: url(/assets/img/courses-business.jpg);
+	background-image: url(../img/courses-business.jpg);
 }
 .courses__box-itemBg-python {
-	background-image: url(/assets/img/courses-python.jpg);
+	background-image: url(../img/courses-python.jpg);
 }
 .courses__box-itemBg-frontend {
-	background-image: url(/assets/img/courses-frontend.jpg);
+	background-image: url(../img/courses-frontend.jpg);
 }
 .courses__box-itemInfo {
 	padding: 32px 24px;
@@ -348,16 +348,16 @@ template {
 	background-size: auto;
 }
 .advantages__box-itemBg-leader {
-	background-image: url(/assets/img/advantages-leader.svg);
+	background-image: url(../img/advantages-leader.svg);
 }
 .advantages__box-itemBg-expert {
-	background-image: url(/assets/img/advantages-expert.svg);
+	background-image: url(../img/advantages-expert.svg);
 }
 .advantages__box-itemBg-relevance {
-	background-image: url(/assets/img/advantages-relevance.svg);
+	background-image: url(../img/advantages-relevance.svg);
 }
 .advantages__box-itemBg-curator {
-	background-image: url(/assets/img/advantages-leader.svg);
+	background-image: url(../img/advantages-leader.svg);
 }
 .advantages__box-itemInfo {
 	margin-top: 34px;
