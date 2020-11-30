@@ -1,13 +1,16 @@
 @import "variables";
+@import "mixins";
 
 .hero {
   display: flex;
   align-items: center;
   height: 708px;
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  @include bgImage;
+
+  //background-repeat: no-repeat;
+  //background-position: center;
+  //background-size: cover;
 
   &__content {
     display: flex;
@@ -37,12 +40,12 @@
   &--main {
     justify-content: flex-start;
     padding-left: 150px;
-    background-image: url(/assets/img/hero-main.jpg);
+    background-image: url(../img/hero-main.jpg);
   }
 
   &--second {
     justify-content: flex-end;
     padding-right: 206px;
-    background-image: url(/assets/img/hero-second.jpg);
+    background-image: url(../img/hero-second.jpg);
   }
 }
