@@ -13,10 +13,10 @@
     gap: 24px;
 
     &-item {
-      border: 1px solid #E9EEF1;
+      border: 1px solid $dark-space20;
       border-radius: 12px;
       box-sizing: border-box;
-      box-shadow: 2px 2px 20px #E9EEF1;
+      box-shadow: 2px 2px 20px $dark-space20;
       overflow: hidden;
     }
 
@@ -60,14 +60,14 @@
     &-itemLink {
       padding-bottom: 2px;
       border-bottom: 1px solid transparent;
-      color: $ozon-blue;
+      color: $ozon-blue100;
       font-size: 18px;
       line-height: 24px;
       letter-spacing: 0.7px;
       text-decoration: none;
 
       &:hover {
-        border-bottom: 1px solid $ozon-blue;
+        border-bottom: 1px solid $ozon-blue100;
       }
     }
   }

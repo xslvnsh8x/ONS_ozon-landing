@@ -1,0 +1,183 @@
+@import "variables";
+
+.request {
+  grid-area: request;
+  padding: 80px 0;
+  background-color: $dark-space10;
+
+  &Wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+    max-width: 456px;
+    width: 100%;
+
+    &-label {
+      width: 100%;
+      margin-bottom: 32px;
+
+      &:last-of-type {
+        margin-bottom: 64px;
+      }
+    }
+
+    &-input {
+      width: 100%;
+      height: 56px;
+      padding: 0 20px;
+      background: $white;
+      border: 1px solid $dark-space30;
+      border-radius: 6px;
+      color: $dark-space70;
+      font-size: 18px;
+      letter-spacing: 0.7px;
+      transition: $button-transition;
+
+      &::placeholder {
+        color: $dark-space70;
+        font-size: 18px;
+        letter-spacing: 0.7px;
+      }
+
+      &:focus {
+        border-color: $dark-space40;
+      }
+
+      &:valid {
+        color: $dark-space90;
+      }
+
+      &:invalid {
+        border-color: $ozon-magenta100;
+      }
+
+      &:disabled {
+        background: $dark-space10;
+      }
+    }
+
+    &-textarea {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      line-height: 28px;
+      resize: vertical;
+    }
+  }
+}
+
+
+.input {
+  display: none;
+}
+
+.select-title {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  padding: 0 20px;
+
+  height: 56px;
+  color: $dark-space70;
+}
+
+.select {
+  display: inline-block;
+  position: relative;
+  height: 56px;
+  line-height: 30px;
+
+  color: $dark-space90;
+  font-size: 18px;
+  letter-spacing: 0.7px;
+}
+
+.select:before {
+  font-family: "Font Awesome 5 Free", sans-serif;
+  font-weight: 900;
+  content: "\f078";
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+  right: 20px;
+  top: 0;
+  z-index: 2;
+  cursor: pointer;
+  color: $dark-space50;
+}
+
+.select input[name="list"]:not(:checked) ~ .select-title {
+  color: $dark-space70;
+  background: $white;
+}
+
+.select input[name="list"]:checked ~ .select-title {
+  background: transparent;
+  color: transparent;
+  z-index: 2;
+}
+
+.items {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  cursor: pointer;
+
+  border: 1px solid $dark-space30;
+  border-radius: 6px;
+}
+
+#select:not(:checked) ~ .items {
+  height: 56px;
+}
+
+.items label {
+  display: none;
+  align-items: center;
+  height: 100%;
+  padding: 12px 20px;
+  border-top: 1px solid $dark-space20;
+  background: $white;
+  color: $dark-space100;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.items label:hover {
+  background: $ozon-blue10;
+  cursor: pointer;
+}
+
+#select:checked ~ .items {
+  padding-top: 56px;
+}
+
+#select:checked ~ .items label {
+  display: block;
+}
+
+.items input:checked + label {
+  display: flex;
+  border: none;
+  background: $white;
+  font-size: 18px;
+}
+
+#select:checked ~ .bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
