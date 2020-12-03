@@ -4,7 +4,7 @@
   font-weight: normal;
   src:
       local('OpenSans-Regular'),
-      url(/assets/fonts/OpenSans-Regular.ttf);
+      url(../fonts/OpenSans-Regular.ttf);
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-weight: bold;
   src:
       local('OpenSans-Bold'),
-      url(/assets/fonts/OpenSans-Bold.ttf);
+      url(../fonts/OpenSans-Bold.ttf);
 }
 
 @font-face {
@@ -22,5 +22,5 @@
   font-weight: normal;
   src:
       local('OpenSans-Light'),
-      url(/assets/fonts/OpenSans-Light.ttf);
+      url(../fonts/OpenSans-Light.ttf);
 }
