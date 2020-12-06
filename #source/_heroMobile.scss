@@ -1,0 +1,67 @@
+@import "variables";
+@import "mixins";
+
+.heroMobile {
+  display: none;
+
+  &-main {
+    background: $dark-space100;
+  }
+
+  &-second {
+    background: $dark-space40;
+  }
+
+  &__image {
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &-heroMain {
+      background:
+          linear-gradient(to bottom, transparent 60%, $dark-space100),
+          url(../img/hero-main.jpg) top right / cover no-repeat;
+    }
+
+    &-heroSecond {
+      background:
+          linear-gradient(to bottom, transparent 60%, $dark-space40),
+          url(../img/hero-second.jpg) top right 75% / cover no-repeat;
+    }
+  }
+
+  &--body {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 36px;
+    padding-bottom: 56px;
+    color: $white;
+
+    &-second {
+      color: $dark-space100;
+    }
+  }
+
+  &__title {
+    font-family: "OpenSans-Regular", sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.8px;
+  }
+
+  &__text {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    font-family: "OpenSans-Light", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+  }
+
+  &__link {
+    padding: 21px 80px;
+  }
+}

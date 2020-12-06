@@ -2,7 +2,8 @@
 @import "mixins";
 
 .courses {
-  margin: 80px 0;
+  margin-top: 80px;
+  margin-bottom: 80px;
 
   &__box {
     margin-top: 64px;
@@ -13,9 +14,10 @@
     gap: 24px;
 
     &-item {
+      display: flex;
+      flex-direction: column;
       border: 1px solid $dark-space20;
       border-radius: 12px;
-      box-sizing: border-box;
       box-shadow: 2px 2px 20px $dark-space20;
       overflow: hidden;
     }
@@ -39,10 +41,20 @@
     }
 
     &-itemInfo {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
       padding: 32px 24px;
+
+      &Wrap {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+      }
     }
 
     &-itemTitle {
+      flex-grow: 1;
       font-size: 24px;
       line-height: 28px;
       letter-spacing: 0.6px;

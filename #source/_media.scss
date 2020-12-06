@@ -1,0 +1,309 @@
+@import "variables";
+
+@media (max-width: 1472px) {
+
+  .header,
+  .header__menuMobile,
+  .footer,
+  .hero,
+  .requestWrap,
+  .heroMobile__info {
+    padding: 0 28px;
+  }
+}
+
+@media (max-width: 1234px) {
+
+  .courses {
+    &__box {
+      grid-template-columns: repeat(auto-fit, 276px);
+    }
+  }
+
+  .hero {
+
+    &--body {
+      height: 560px;
+    }
+
+    &--main {
+      padding-left: 120px;
+    }
+
+    &--second {
+      padding-right: 72px;
+    }
+  }
+}
+
+@media (max-width: 1089px) {
+  .title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .header {
+
+    &__openMenu {
+      display: block;
+      padding: 12px;
+
+      &-icon {
+        font-size: 32px;
+        color: $dark-space100;
+      }
+    }
+
+    &__menuMobile {
+      display: flex;
+    }
+
+    &__navigation {
+      display: none;
+    }
+
+    &__tagline {
+      display: none;
+    }
+  }
+
+  .hero {
+
+    &--body {
+      height: 508px;
+    }
+
+    &--main {
+      padding-left: 100px;
+    }
+
+    &--second {
+      padding-right: 46px;
+    }
+  }
+
+  .advantages {
+    margin-top: 56px;
+    margin-bottom: 35px;
+
+    &--body {
+      width: 100vw;
+    }
+
+    &__box {
+      margin-top: 15px;
+      padding: 21px 0 21px 28px;
+      grid-template-columns: repeat(4, 276px);
+      gap: 26px;
+      justify-content: start;
+      overflow-x: auto;
+
+      &-item {
+        border: 1px solid $box-shadow-mobile;
+        border-radius: 16px;
+        box-shadow: 2px 2px 20px $box-shadow-mobile;
+        padding: 32px 24px;
+        overflow: hidden;
+      }
+
+      &-itemBg {
+        background-position: 8px center;
+      }
+
+      &-itemInfo {
+        margin-top: 32px;
+        text-align: left;
+      }
+
+      &-itemText {
+        letter-spacing: -0.5px;
+      }
+    }
+  }
+
+  .footer {
+
+    &--body {
+      flex-direction: column;
+      padding-top: 56px;
+      padding-bottom: 56px;
+    }
+
+    &__tagline {
+      display: block;
+      margin-top: 34px;
+      margin-bottom: 38px;
+    }
+
+    &__info {
+
+      &-text {
+        text-align: center;
+      }
+    }
+
+    &__social {
+      margin-top: 38px;
+      margin-bottom: 37px;
+    }
+  }
+}
+
+@media (max-width: 933px) {
+
+  .hero {
+
+    &--body {
+      height: 430px;
+    }
+
+    &--main {
+      padding-left: 48px;
+    }
+
+    &--second {
+      padding-right: 0;
+    }
+  }
+
+  .courses {
+    margin-top: 56px;
+    margin-bottom: 35px;
+
+    &--body {
+      width: 100vw;
+    }
+
+    &__box {
+      grid-template-columns: repeat(4, 276px);
+      justify-content: start;
+      margin-top: 15px;
+      padding: 21px 0 21px 28px;
+      overflow-x: auto;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .hero {
+    display: none;
+  }
+
+  .heroMobile {
+    display: block;
+  }
+
+  .request {
+    padding: 56px 0;
+
+    &__form {
+      padding-top: 36px;
+
+      &-label:last-of-type {
+        margin-bottom: 36px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .header,
+  .header__menuMobile,
+  .footer,
+  .hero,
+  .requestWrap,
+  .heroMobile__info {
+    padding: 0 16px;
+  }
+
+  .courses__box,
+  .advantages__box {
+    padding: 21px 0 21px 16px;
+  }
+
+  .header {
+    min-height: 76px;
+
+    &__mainLogo {
+      width: 120px;
+      height: 38px;
+    }
+
+    &__openMenu-icon {
+      font-size: 26px;
+    }
+
+    &__menuMobile-topBar {
+      min-height: 76px;
+    }
+  }
+
+  .heroMobile {
+
+    &__image {
+      height: 481px;
+
+      &-heroMain {
+        background:
+            linear-gradient(to bottom, transparent 60%, $dark-space100),
+            url(../img/hero-main.jpg) top 40% right 18%/auto 580px no-repeat;
+      }
+
+      &-heroSecond {
+        background:
+            linear-gradient(to bottom, transparent 60%, $dark-space40),
+            url(../img/hero-second.jpg) top 100% right 71%/auto 520px no-repeat;
+      }
+    }
+
+    &--body {
+      max-width: 100%;
+      align-items: stretch;
+    }
+
+    &__link {
+      padding: 18px 28px;
+      font-size: 18px;
+    }
+  }
+
+  .footer {
+
+    &__mainLogo {
+      width: 156px;
+      height: 50px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .heroMobile {
+
+    &__image {
+      height: 360px;
+
+      &-heroMain {
+        background:
+            linear-gradient(to bottom, transparent 60%, $dark-space100),
+            url(../img/hero-main.jpg) top 45% right 18%/auto 452px no-repeat;
+      }
+
+      &-heroSecond {
+        background:
+            linear-gradient(to bottom, transparent 60%, $dark-space40),
+            url(../img/hero-second.jpg) top 100% right 75%/auto 410px no-repeat;
+      }
+    }
+  }
+
+  .header {
+
+    &__menuMobile-bottomBar {
+      flex-direction: column;
+    }
+
+    &__menuMobile-navLink {
+      font-size: 24px;
+    }
+  }
+}
