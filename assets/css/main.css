@@ -273,6 +273,12 @@ template {
 }
 .header__openMenu {
 	display: none;
+	padding: 12px;
+}
+.header__openMenu-icon {
+	font-size: 32px;
+	color: #001A34;
+	cursor: pointer;
 }
 .header__switcher {
 	position: absolute;
@@ -330,6 +336,7 @@ template {
 .header__closeMenu-icon {
 	font-size: 32px;
 	color: #001A34;
+	cursor: pointer;
 }
 
 .hero--body {
@@ -857,11 +864,6 @@ a:active {
 
 	.header__openMenu {
 		display: block;
-		padding: 12px;
-	}
-	.header__openMenu-icon {
-		font-size: 32px;
-		color: #001A34;
 	}
 	.header__menuMobile {
 		display: flex;
