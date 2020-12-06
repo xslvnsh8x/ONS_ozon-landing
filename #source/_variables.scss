@@ -7,19 +7,18 @@ $dark-space70: #667585;
 $dark-space80: #33475C;
 $dark-space90: #1A3047;
 $dark-space100: #001A34;
+$box-shadow-mobile: #E5EBF0;
 $white: #fff;
 $ozon-blue10: #E0EBFF;
 $ozon-blue100: #005BFF;
 $hover-blue: #0051E4;
 $pressed-blue: #0041B8;
 $ozon-magenta100: #F81155;
-$ts-onWhite-title:
-    -1px -1px 1px rgba(255, 255, 255, .1),
-    1px 1px 3px rgba(0, 0, 0, 0.2),
-    2px 2px 5px rgba(206, 89, 55, 0);
-$ts-onWhite:
-    -1px -1px 1px rgba(255, 255, 255, .1),
-    1px 1px 2px rgba(0, 0, 0, 0.3),
-    2px 2px 5px rgba(206, 89, 55, 0);
+$ts-onWhite-title: -1px -1px 1px rgba(255, 255, 255, .1),
+1px 1px 3px rgba(0, 0, 0, 0.2),
+2px 2px 5px rgba(206, 89, 55, 0);
+$ts-onWhite: -1px -1px 1px rgba(255, 255, 255, .1),
+1px 1px 2px rgba(0, 0, 0, 0.3),
+2px 2px 5px rgba(206, 89, 55, 0);
 $button-transition: all .3s ease;
 $links-transition: all .15s ease;

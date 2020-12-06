@@ -2,10 +2,25 @@
 @import "mixins";
 
 .hero {
-  display: flex;
-  align-items: center;
-  height: 708px;
-  @include bgImage;
+
+  &--body {
+    display: flex;
+    align-items: center;
+    height: 708px;
+    @include bgImage;
+  }
+
+  &--main {
+    justify-content: flex-start;
+    padding-left: 150px;
+    background-image: url(../img/hero-main.jpg);
+  }
+
+  &--second {
+    justify-content: flex-end;
+    padding-right: 206px;
+    background-image: url(../img/hero-second.jpg);
+  }
 
   &__content {
     display: flex;
@@ -34,17 +49,5 @@
     letter-spacing: 0.6px;
 
     text-shadow: $ts-onWhite;
-  }
-
-  &--main {
-    justify-content: flex-start;
-    padding-left: 150px;
-    background-image: url(../img/hero-main.jpg);
-  }
-
-  &--second {
-    justify-content: flex-end;
-    padding-right: 206px;
-    background-image: url(../img/hero-second.jpg);
   }
 }

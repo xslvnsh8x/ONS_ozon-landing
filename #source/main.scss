@@ -5,6 +5,7 @@
 @import "mixins";
 @import "header";
 @import "hero";
+@import "heroMobile";
 @import "courses";
 @import "advantages";
 @import "request";
@@ -55,3 +56,5 @@ a:active {
 .main {
   grid-area: main;
 }
+
+@import "media";

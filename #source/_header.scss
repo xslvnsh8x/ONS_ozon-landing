@@ -61,4 +61,77 @@
     line-height: 26px;
     letter-spacing: 0.6px;
   }
+
+  &__openMenu {
+    display: none;
+  }
+
+  &__switcher {
+    position: absolute;
+    left: -99999px;
+    visibility: hidden;
+  }
+
+  &__switcher:checked~.header__menuMobile {
+    right: 0;
+  }
+
+  &__menuMobile {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    background-color: $white;
+    top: 0;
+    right: 100vw;
+    z-index: 99;
+
+    &-topBar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 124px;
+    }
+
+    &-navList {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      list-style: none;
+    }
+
+    &-navItem {
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
+    }
+
+    &-navLink {
+      font-size: 32px;
+      text-decoration: none;
+      color: $dark-space100;
+    }
+
+    &-main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+    }
+
+    &-bottomBar {
+      min-height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__closeMenu-icon {
+    font-size: 32px;
+    color: #001A34;
+  }
 }
