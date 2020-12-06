@@ -64,6 +64,13 @@
 
   &__openMenu {
     display: none;
+    padding: 12px;
+
+    &-icon {
+      font-size: 32px;
+      color: $dark-space100;
+      cursor: pointer;
+    }
   }
 
   &__switcher {
@@ -133,5 +140,6 @@
   &__closeMenu-icon {
     font-size: 32px;
     color: #001A34;
+    cursor: pointer;
   }
 }
